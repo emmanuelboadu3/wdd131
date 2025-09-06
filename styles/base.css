@@ -1,0 +1,172 @@
+/* Profile section */
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.profile img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Scripture section */
+.scripture-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.scripture-section img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.scripture-section p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    margin: 0;
+    font-size: 2rem;
+}
+
+#course-title {
+    display: block;
+    color: #f1c40f;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #34495e;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    gap: 8rem;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border-radius: 4px;
+}
+
+/* Main content styles */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.card h2, .card h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
