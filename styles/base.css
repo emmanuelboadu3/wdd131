@@ -21,8 +21,9 @@
     line-height: 1.6;
 }
 
-/* Scripture section */
-.scripture-section {
+
+/* Okomfo Anokye section layout */
+.location {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,19 +31,23 @@
     gap: 20px;
     flex-wrap: wrap;
     text-align: left;
-    margin-top: 20px;
 }
 
-.scripture-section img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.scripture-section p {
+.location-text {
     flex: 1;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+.location-image {
+    flex: 1;
+    text-align: right;
+}
+
+.location img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* Base styles */
