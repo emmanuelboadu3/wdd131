@@ -8,14 +8,12 @@ header {
     padding: 1rem 2rem;
     text-align: left;
     background-color: #2a3d66;
-    /* dark blue background */
     color: white;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    /* visible against dark background */
     font-weight: 400;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
@@ -23,7 +21,6 @@ nav a {
 nav a:hover,
 nav a:focus {
     color: #ffcc00;
-    /* yellow hover for contrast */
     border-bottom: 2px solid #ffcc00;
 }
 
@@ -41,13 +38,6 @@ nav ul {
     display: none;
 }
 
-/* Always show nav on large screens */
-#navMenu {
-    display: flex !important;
-    flex-direction: row;
-    gap: 1.5rem;
-}
-
 /* Main content */
 main {
     display: grid;
@@ -55,7 +45,6 @@ main {
     margin: 0 auto;
     padding: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Responsive columns */
     gap: 1.5rem;
 }
 
@@ -95,4 +84,19 @@ footer {
     background-color: #2a3d66;
     color: white;
     text-align: center;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    header {
+        text-align: left;
+        /* override mobile centering */
+    }
+}
+
+/* Media query for very large screens */
+@media screen and (min-width: 1600px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
