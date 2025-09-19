@@ -58,23 +58,6 @@ picture img {
     overflow: hidden;
 }
 
-.card-header {
-    background-color: var(--secondary);
-    color: var(--dark);
-    padding: 1rem;
-    font-weight: bold;
-    font-size: 1.3rem;
-    position: relative;
-}
-
-/* Decorative icon for wider screens */
-.weather .card-header::after {
-    content: "⛅";
-    
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
-}
-
 .card-body {
     padding: 1rem 1.2rem;
 }
@@ -89,7 +72,20 @@ li {
     margin: 0.4rem 0;
 }
 
-/* Positioning */
+.data-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.data-header .card-header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 .data {
     top: 40px;
     left: 40px;
@@ -100,15 +96,27 @@ li {
     right: 40px;
 }
 
-/* SVG icon only in weather card */
-.weather .mobile-icon {
-    display: none;
-    width: 40px;
-    height: auto;
-    margin: 0.5rem 1rem;
+/* NEW: Weather header with icon beside heading */
+.weather-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: var(--dark);
 }
 
-/* Footer */
+.weather-header .card-header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.weather-icon {
+    width: 32px;
+    height: auto;
+}
+
 footer {
     background-color: var(--primary);
     color: var(--light);
@@ -117,19 +125,10 @@ footer {
     font-weight: bold;
 }
 
-/* Responsive layout */
 @media (max-width: 600px) {
     .card {
         position: static;
         width: 90%;
         margin: 1rem auto;
-    }
-
-    .weather .card-header::after {
-        content: "";
-    }
-
-    .weather .mobile-icon {
-        display: block;
     }
 }
