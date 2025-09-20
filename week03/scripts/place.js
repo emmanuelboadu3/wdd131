@@ -1,8 +1,4 @@
-// =============================
-// Footer Info
-// =============================
 
-// Set current year
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
