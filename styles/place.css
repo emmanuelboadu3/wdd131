@@ -38,6 +38,17 @@ header h1 {
     letter-spacing: 1px;
 }
 
+/* ::after pseudo-element */
+header h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 0.5rem auto 0;
+    background-color: var(--secondary);
+    border-radius: 2px;
+}
+
 main {
     width: 100%;
     position: relative;
