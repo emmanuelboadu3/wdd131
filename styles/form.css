@@ -1,83 +1,68 @@
-/* ===== General Page Styling ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #ffffff;
-    /* White background */
     color: #555555;
-    /* Gray text */
 }
 
-/* ===== Header and Footer ===== */
 header,
 footer {
     background-color: #4B0082;
-    /* Deep purple */
     color: #ffffff;
     padding: 1rem;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* ===== Main Container ===== */
 main {
     padding: 1rem;
     max-width: 600px;
     margin: auto;
     background-color: #cabebe;
-    /* White form background */
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== Form Layout ===== */
 form {
     display: grid;
     gap: 1rem;
 }
 
-/* ===== Labels and Legends ===== */
 label,
 legend {
     font-weight: bold;
     margin-top: 0.5rem;
     color: #333333;
-    /* Dark gray for emphasis */
+    font-family: 'Roboto', sans-serif;
 }
 
-/* ===== Input Fields ===== */
 input,
 select,
 textarea {
     padding: 0.5rem;
     border: 1px solid #9e9393;
-    /* Light gray border */
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
     background-color: #ffffff;
-    /* White input background */
     color: #555555;
-    /* Gray text */
+    font-family: 'Roboto', sans-serif;
 }
 
 input::placeholder,
 textarea::placeholder {
     color: #999999;
-    /* Gray placeholder */
 }
 
-/* ===== Radio and Checkbox Inputs ===== */
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
 }
 
-/* ===== Submit Button ===== */
 input[type="submit"] {
     background-color: #4B0082;
-    /* Deep purple */
     color: white;
     border: none;
     padding: 0.8rem;
@@ -85,14 +70,13 @@ input[type="submit"] {
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type="submit"]:hover {
     background-color: #5e00a3;
-    /* Slightly lighter purple on hover */
 }
 
-/* ===== Star Rating Styling ===== */
 .rating-group {
     display: flex;
     gap: 2rem;
@@ -107,9 +91,9 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
     cursor: pointer;
     color: #555555;
-    /* Gray stars */
     transition: color 0.3s ease;
     gap: 0.01rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .rating-group span {
@@ -118,19 +102,22 @@ input[type="submit"]:hover {
     margin-bottom: 0;
 }
 
-/* Highlight selected star */
 .rating-group input[type="radio"]:checked+span {
     color: #4B0082;
-    /* Deep purple when selected */
 }
 
-/* Hover effect */
 .rating-group label:hover span {
     color: #4B0082;
-    /* Deep purple on hover */
 }
 
-/* ===== Responsive Design ===== */
+input:required {
+    border-right: solid 6px red;
+}
+
+input:required:valid {
+    border-right: solid 6px green;
+}
+
 @media (max-width: 600px) {
     main {
         padding: 0.5rem;
@@ -144,11 +131,4 @@ input[type="submit"]:hover {
         font-size: 0.9rem;
         padding: 0.6rem;
     }
-
-.input:required {
-    border-right: solid 6px red;
-}
-.input:required:valid {
-    border-right: solid 6px green;
-}
 }

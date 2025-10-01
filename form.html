@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Review futuristic tech products like flux capacitors, power laces, and more.">
+    <meta name="author" content="Emmanuel Boadu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
@@ -17,13 +22,10 @@
 
     <main>
         <form method="get" action="review.html" autocomplete="on">
-            <!-- Product Name -->
             <label for="product">Product Name:</label>
             <select id="product" name="product" required autocomplete="off">
                 <option value="" disabled selected>Select a Product ...</option>
-                <!-- options added by JS -->
             </select>
-
             <!-- Rating -->
             <fieldset>
                 <legend>Overall Rating:</legend>
@@ -73,7 +75,7 @@
             <input type="text" id="username" name="username" autocomplete="name">
 
             <!-- Submit -->
-            <input type="submit" value="Submit Review">
+            <input type="submit" value="Submit">
         </form>
     </main>
 
