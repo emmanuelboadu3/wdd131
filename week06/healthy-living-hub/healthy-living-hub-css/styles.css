@@ -1,0 +1,291 @@
+/* =========================== GLOBAL STYLES =========================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    background-color: #f5fdf5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================== HEADER =========================== */
+header {
+    background-color: #2e8b57;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 1.5rem;
+    top: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* =========================== NAVIGATION =========================== */
+nav {
+    background-color: #3b9c68;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffd700;
+}
+
+/* =========================== HERO SECTION =========================== */
+.hero {
+    position: relative;
+    text-align: center;
+    height: 70vh;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* =========================== CARD GRID SECTION =========================== */
+.section-title {
+    text-align: center;
+    margin-top: 3rem;
+    color: #2e8b57;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 4rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #2e8b57;
+}
+
+.card p {
+    padding: 0 1rem 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+#generate-workout {
+    padding: 0.9rem 1.4rem;
+    /* More space inside the button */
+    font-size: 1.1rem;
+    /* Slightly larger text */
+    margin-bottom: 1rem;
+    /* Keeps space below the button */
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate-workout:hover {
+    background-color: #3b9c68;
+}
+
+/* =========================== FOOTER =========================== */
+footer {
+    background-color: #2e8b57;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .socials {
+    margin-top: 0.5rem;
+}
+
+footer .socials img {
+    width: 50px;
+    margin: 0 10px;
+    vertical-align: middle;
+    filter: brightness(95%);
+    transition: transform 0.3s ease;
+}
+
+footer .socials img:hover {
+    transform: scale(1.1);
+}
+
+/* =========================== NUTRITION PAGE STYLES (For the recipe search box) =========================== */
+.recipe-search {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.recipe-search input[type="text"] {
+    /* ✅ Makes the text box more spacious */
+    width: 60%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #2e8b57;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.recipe-search input[type="text"]:focus {
+    border-color: #3b9c68;
+    box-shadow: 0 0 8px rgba(46, 139, 87, 0.4);
+}
+
+/* =========================== CONTACT PAGE STYLES (Align form fields vertically on the left) =========================== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Aligns content to the left */
+    max-width: 500px;
+    margin: 3rem 0 3rem 3rem;
+    /* Adds left margin */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #2e8b57;
+    margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1.8px solid #2e8b57;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #3b9c68;
+    box-shadow: 0 0 8px rgba(46, 139, 87, 0.3);
+}
+
+.contact-form button {
+    align-self: center;
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3b9c68;
+}
+
+/* =========================== RESPONSIVE =========================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    header .logo {
+        width: 55px;
+    }
+
+    /* ✅ Responsive adjustments for nutrition input */
+    .recipe-search input[type="text"] {
+        width: 90%;
+    }
+
+    /* ✅ Responsive contact form */
+    .contact-form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}

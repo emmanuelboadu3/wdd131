@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmanuel Boadu">
+    <meta name="description" content="Nutrition and healthy recipes for everyday wellness.">
+    <title>Nutrition | Healthy Living Hub</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="healthy-living-hub-css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Healthy Living Hub Logo" class="logo">
+            <h1>Nutrition</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="nutrition.html" class="active">Nutrition</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="images/nutrition.webp" alt="Healthy nutrition" class="hero-img" loading="lazy">
+        <div class="hero-text">
+            <h2>Eat Smart 🥗</h2>
+            <p>Balanced nutrition is the key to lasting wellness — discover foods that fuel your body and mind.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="recipe-search">
+            <h2>Find a Recipe</h2>
+            <p>Search for healthy recipes or ingredients below:</p>
+            <input type="text" id="recipe-search" placeholder="Search recipes...">
+            <div id="recipe-results" class="recipe-results"></div>
+        </section>
+
+        <section class="nutrition-gallery">
+            <img src="images/fruits-and-fruit-juice.webp" alt="Fruits and juice">
+            <p>Start your day with a burst of vitamins — fresh fruits and natural juices support hydration and immunity.
+            </p>
+
+            <img src="images/legumes-on-table (1).webp" alt="Legumes">
+            <p>Legumes like beans and lentils are rich in protein and fiber — great for heart and gut health.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Healthy Living Hub | Designed by Emmanuel Boadu</p>
+            <div class="socials">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            </div>
+            <a href="references.html" class="footer-ref">References</a>
+        </div>
+    </footer>
+
+    <script src="healthy-living-hub-js/nutrition.js" defer></script>
+    <script src="healthy-living-hub-js/script.js" defer></script>
+</body>
+
+</html>
